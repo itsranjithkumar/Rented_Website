@@ -1,0 +1,165 @@
+{
+    "categories": {
+      "Bikes": [
+        {
+          "id": 1,
+          "name": "Mountain Bike",
+          "description": "Rent this high-quality mountain bike for your next adventure.",
+          "price": {
+            "perDay": 20,
+            "perWeek": 100,
+            "perMonth": 300
+          },
+          "image": "/images/mountain-bike.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Road Bike",
+          "description": "Fast and lightweight road bike for racing.",
+          "price": {
+            "perDay": 25,
+            "perWeek": 120,
+            "perMonth": 350
+          },
+          "image": "/images/road-bike.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Hybrid Bike",
+          "description": "Versatile bike suitable for both road and trail.",
+          "price": {
+            "perDay": 22,
+            "perWeek": 110,
+            "perMonth": 320
+          },
+          "image": "/images/hybrid-bike.jpg"
+        },
+        {
+          "id": 4,
+          "name": "BMX Bike",
+          "description": "Sturdy BMX bike for tricks and stunts.",
+          "price": {
+            "perDay": 18,
+            "perWeek": 90,
+            "perMonth": 250
+          },
+          "image": "/images/bmx-bike.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Electric Bike",
+          "description": "Eco-friendly electric bike for easy commuting.",
+          "price": {
+            "perDay": 30,
+            "perWeek": 150,
+            "perMonth": 400
+          },
+          "image": "/images/electric-bike.jpg"
+        }
+      ],
+      "Drones": [
+        {
+          "id": 6,
+          "name": "Camera Drone",
+          "description": "High-quality drone for aerial photography.",
+          "price": {
+            "perDay": 50,
+            "perWeek": 300,
+            "perMonth": 1000
+          },
+          "image": "/images/camera-drone.jpg"
+        }
+      ],
+      "Laptops": [
+        {
+          "id": 11,
+          "name": "Gaming Laptop",
+          "description": "Powerful laptop for gaming and heavy tasks.",
+          "price": {
+            "perDay": 40,
+            "perWeek": 200,
+            "perMonth": 700
+          },
+          "image": "/images/gaming-laptop.jpg"
+        }
+      ],
+      "Cameras": [
+        {
+          "id": 16,
+          "name": "DSLR Camera",
+          "description": "Professional camera for photography.",
+          "price": {
+            "perDay": 35,
+            "perWeek": 180,
+            "perMonth": 600
+          },
+          "image": "/images/dslr-camera.jpg"
+        }
+      ],
+      "Furniture": [
+        {
+          "id": 21,
+          "name": "Office Chair",
+          "description": "Ergonomic chair for office use.",
+          "price": {
+            "perDay": 10,
+            "perWeek": 50,
+            "perMonth": 150
+          },
+          "image": "/images/office-chair.jpg"
+        }
+      ],
+      "Electronics": [
+        {
+          "id": 26,
+          "name": "Smartphone",
+          "description": "Latest smartphone with advanced features.",
+          "price": {
+            "perDay": 15,
+            "perWeek": 70,
+            "perMonth": 200
+          },
+          "image": "/images/smartphone.jpg"
+        }
+      ],
+      "Security Equipment": [
+        {
+          "id": 31,
+          "name": "Security Camera",
+          "description": "High-definition security camera for home.",
+          "price": {
+            "perDay": 20,
+            "perWeek": 100,
+            "perMonth": 300
+          },
+          "image": "/images/security-camera.jpg"
+        }
+      ],
+      "Machines and Tools": [
+        {
+          "id": 36,
+          "name": "Drill Machine",
+          "description": "Powerful drill for construction.",
+          "price": {
+            "perDay": 25,
+            "perWeek": 120,
+            "perMonth": 350
+          },
+          "image": "/images/drill-machine.jpg"
+        }
+      ],
+      "Home Appliances": [
+        {
+          "id": 41,
+          "name": "Washing Machine",
+          "description": "Automatic washing machine for home use.",
+          "price": {
+            "perDay": 30,
+            "perWeek": 150,
+            "perMonth": 400
+          },
+          "image": "/images/washing-machine.jpg"
+        }
+      ]
+    }
+  }
