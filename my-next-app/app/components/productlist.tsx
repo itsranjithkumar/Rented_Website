@@ -397,7 +397,7 @@ export function ProductList({ categoryId }: ProductListProps) {
                   src={product.images[0] || "/placeholder.svg"}
                   alt={product.name}
                   fill
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover w-full h-full min-w-full min-h-full"
                 />
               </div>
               <div className="p-4 space-y-3">

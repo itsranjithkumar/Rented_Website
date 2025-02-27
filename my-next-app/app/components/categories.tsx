@@ -13,31 +13,31 @@ const categories = [
     id: "electronics",
     name: "Electronics",
     image: "/electornics.jpg",
-    description: "Latest gadgets and electronic devices",
+    description: "Cutting-Edge Gadgets & Tech Wonders",
   },
   {
     id: "clothing",
     name: "Drones",
     image: "/drone.jpg",
-    description: "Fashion and apparel",
+    description: "High-Performance Aerial Innovations",
   },
   {
     id: "home",
     name: "Home Appliances",
     image: "/electronics.jpg",
-    description: "Home decor and furniture",
+    description: "Smart Living Essentials",
   },
   {
     id: "sports",
     name: "Sports",
     image: "/sports.jpeg",
-    description: "Sports equipment and accessories",
+    description: "Gear Up for Peak Performance",
   },
   {
     id: "gym-equipment",
     name: "Gym Equipment",
     image: "/gym.jpg",
-    description: "High-quality gym equipment for home and professional use",
+    description: "Transform Your Fitness Journey",
   },
 ]
 
@@ -47,7 +47,6 @@ export function Categories() {
   return (
     <div className="space-y-8">
       <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-        {/* <span>Home</span> */}
         {selectedCategory && (
           <>
             <ChevronRight className="h-4 w-4" />
@@ -60,20 +59,22 @@ export function Categories() {
 
       {!selectedCategory ? (
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-12 text-center text-gray-800">Browse Categories</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h1 className="text-4xl font-bold mb-12 text-center text-black">
+            Discover Your Perfect Gear
+          </h1>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {categories.map((category) => (
               <Card
                 key={category.id}
                 className="group cursor-pointer transition-all duration-300 
-                           hover:shadow-xl hover:scale-105 
-                           rounded-2xl border-2 border-transparent 
+                           hover:shadow-md hover:scale-105 
+                           rounded-xl border-2 border-transparent 
                            hover:border-blue-100 
                            bg-white"
                 onClick={() => setSelectedCategory(category.id)}
               >
                 <CardContent className="p-0">
-                  <div className="relative aspect-square overflow-hidden rounded-t-2xl">
+                  <div className="relative aspect-square overflow-hidden rounded-t-xl">
                     <Image
                       src={category.image || "/placeholder.svg"}
                       alt={category.name}
@@ -81,13 +82,10 @@ export function Categories() {
                       className="object-cover transition-transform group-hover:scale-110"
                     />
                   </div>
-                  <div className="p-6 space-y-3 text-center">
-                    <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <div className="p-3 text-center">
+                    <h2 className="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors truncate">
                       {category.name}
                     </h2>
-                    <p className="text-sm text-gray-600 line-clamp-2">
-                      {category.description}
-                    </p>
                   </div>
                 </CardContent>
               </Card>
