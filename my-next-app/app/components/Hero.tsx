@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState, useEffect, useMemo } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
@@ -9,7 +9,7 @@ const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [currentItem, setCurrentItem] = useState('Furniture')
   
-  const items = ['Furniture', 'Cameras', 'Electronics', 'Drones']
+  const items = useMemo(() => ['Furniture', 'Cameras', 'Electronics', 'Drones'], [])
 
   useEffect(() => {
     const handleScroll = () => {
