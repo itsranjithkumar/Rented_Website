@@ -26,19 +26,19 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gray-100/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full bg-gray-300/80 backdrop-blur-md">
       <div className="container mx-auto px-4">
-        <div className="flex h-12 items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-semibold text-gray-900">RentPro</span>
+            <span className="text-2xl font-semibold text-gray-900">RentPro</span>
           </Link>
           <nav className="hidden md:flex md:space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors duration-200 ease-in-out hover:text-gray-900 ${
-                  pathname === item.href ? "text-gray-900" : "text-gray-600"
+                className={`text-base font-medium transition-colors duration-200 ease-in-out hover:text-gray-900 ${
+                  pathname === item.href ? "text-gray-900" : "text-gray-700"
                 }`}
               >
                 {item.name}
@@ -118,4 +118,3 @@ export function Header() {
 }
 
 export default Header
-
