@@ -49,7 +49,7 @@ const Hero = () => {
       {/* Background video with improved overlay */}
       <video
         ref={videoRef}
-        src="/video2.mp4"
+        src="/video1.mp4"
         autoPlay
         loop
         muted
